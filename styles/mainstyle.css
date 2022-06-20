@@ -1,0 +1,240 @@
+/* main */
+html {
+    scroll-behavior: smooth;
+}
+.free-space {
+    height: 80px;
+}
+h3, h4 {
+    text-transform: uppercase;
+    color: #3c4349;
+    margin-bottom: 1rem;
+}
+p,q {
+    color: #777;
+    margin-bottom: 1.5rem
+}
+.mybtn {
+    border-radius: 0;
+    color: #6ABEA7;
+    border: 2px solid #6ABEA7;
+    background-color: transparent;
+    padding: 5px 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.mybtn:hover {
+    background-color: #6ABEA7;
+    color: #f1faee;
+}
+@media (max-width : 991px) {
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.25rem;
+    }
+}
+/* slider */
+.slider {
+    position: relative;
+
+}
+.slider .carousel .layer {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .carousel .layer h1,
+.slider .carousel .layer a {
+    position: absolute;
+    z-index: 3;
+    color: #f1faee;
+    text-transform: uppercase;
+}
+.slider .carousel .layer h1 {
+    border-top: 2px solid #f1faee;
+    border-bottom: 2px solid #f1faee;
+    background-color: #001011;
+    font-size: 3rem;
+}
+.slider .carousel .layer a {
+    top: 60%;
+    padding: 5px 20px;
+    border: 2px solid #f1faee;
+    text-decoration: none;
+}
+@media (max-width: 991px) {
+    .slider .carousel .layer h1 {
+        font-size: 2.5rem;
+    }
+    .slider .carousel .layer a {
+        top: 70%;
+    }
+}
+.slider .carousel .layer a:hover {
+    background-color: #001011;
+}
+.slider .carousel .carousel-item {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.slider .carousel .first {
+    background-image: url('../imgs/slider2.jpg');
+}
+.slider .carousel .second {
+    background-image: url('../imgs/slider3.jpg');
+}
+.slider li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #f1faee;
+    background-color: transparent;
+    cursor: pointer;
+}
+/* navbar*/
+.mynav {
+    background-color: #001011f8;
+    color: #f1faee !important;
+}
+.mynav .navbar-brand {
+    color: #74B3CE;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+}
+.mynav a span {
+    color: #6ABEA7;
+}
+.mynav a {
+    color: #f1faee;
+}
+.mynav a:hover {
+    color: #6ABEA7;
+}
+.mynav .fa-caret-down:before {
+    color: #f1faee;
+    font-size: 30px;
+    border: 2px solid #f1faee;
+    padding: 6px 12px;
+}
+.mynav button:focus {
+    outline : 0 auto -webkit-focus-ring-color;
+}
+/* home*/
+.home p {
+    margin-bottom: 0;
+}
+@media (max-width : 991px) {
+    .home p {
+        margin-bottom: 1.5rem;
+        padding: 0 10%;
+    }
+}
+/* about me*/
+.about-me {
+    background-color: #F2F2F2;
+    overflow: hidden;
+}
+.about-me img {
+    width: 100%;
+    height: 10px; 
+    object-fit: cover;
+}
+.about-me h3 {
+    margin-top: 80px;
+}
+.about-me span i {
+    color: #6ABEA7;
+}
+@media (max-width : 991px) {
+    .about-me img {
+        padding: 5%;
+    }
+    .about-me h3 {
+        margin-top: 0;
+    }
+}
+/* my skills */ 
+.progress {
+    height: 22px;
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+.progress .progress-bar {
+    width: 90%;
+    height: 100%;
+    background-color: #6ABEA7;
+    color: #fff;
+    text-align: right;
+    padding-right: 5px;
+}
+/* resume */ 
+.resume {
+    background-color: #F2F2F2;
+}
+.resume p {
+    padding: 0 50px;
+}
+/* testimonials */
+.testimonials kbd {
+    color: #f1faee;
+    background-color: #6ABEA7;
+    padding: 4px 8px;
+}
+/* recommmendation */
+.recommendation {
+    background-color: #F2F2F2;
+}
+.recommendation q {
+    display: block;
+    padding: 0 15%;
+    font-style: italic;
+    font-weight: 500;
+}
+/* portofolio */ 
+.portofolio .portfolio_grid {
+    margin-left: auto;
+}
+.portofolio .row div {
+    padding: 15px 15px 0 0;
+}
+.portofolio img {
+    width: 100%;
+}
+/* contact me */
+.contact-me {
+    background-color: #252F31;
+    color: #f1faee;
+}
+.contact-me h3 {
+    margin-top: 1rem;
+    color: #f1faee;
+}
+/* footer */
+footer {
+    padding-block: 1rem;
+    background-color: #333;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+footer > p {
+    margin-bottom: 0;
+    color: #FFF;
+}
+footer > p > span {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(0, 162, 255);
+}
